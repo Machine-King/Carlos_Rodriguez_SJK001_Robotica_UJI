@@ -1,4 +1,4 @@
-# Proyecto: Robotica_UJI (Carlos_Rodriguez_SJK001)
+# Proyecto: Robotica_UJI SJK001 (Carlos_Rodriguez)
 
 Este repositorio contiene el código, instrucciones de uso, explicación de funcionamiento y evaluación del rendimiento para el ejercicio 'Follow line' de Unibotics.
 
@@ -18,7 +18,7 @@ Desde el terminal ejecuta el siguiente comando para descargar la imagen del back
 docker pull jderobot/robotics-backend:latest
 ```
 
-Dependiende dell hardware de tu equipo ejecutar uno de los siguientes comandos para lanzar el contenedor:
+Dependiendo del hardware de tu equipo ejecutar uno de los siguientes comandos para lanzar el contenedor:
 
 ```bash
 #Without graphic acceleration
@@ -45,4 +45,4 @@ Finalmente darle al boton play para ejecutar el código. Todo listo!
 ![alt text](image-2.png)
 
 
-# Carlos_Rodriguez_SJK001_Robotica_UJI
+© Carlos Luis Rodriguez Brito

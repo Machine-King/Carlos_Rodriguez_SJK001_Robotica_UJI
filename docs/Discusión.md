@@ -3,14 +3,14 @@ Como se puede observar en la carpeta '/code/' para los tres controladores
 se define la velocidad 'V' de la misma forma.
 
 ```python
-if abs_err<30:
-           v = 8 
-       elif abs_err < 60:
-           v = 3 
-       elif abs_err < 200:
-           v = 2
-       elif abs_err < 250:
-           v = 1
+if abs_err < 30:
+    v = 8 
+elif abs_err < 60:
+    v = 3 
+elif abs_err < 200:
+    v = 2
+elif abs_err < 250:
+    v = 1
 ```
 
 V es una velocidad variable que se define con una función escalón que reduce la velocidad
@@ -19,15 +19,13 @@ la linea de forma estable, como por ejemplo en una recta, podemos aumentar la ve
 mucha estabilidad, pero si el error es mayor nos interesa ir más lento para que el coche tenga
 tiempo de alinearse con la recta.
 
-[INSERTAR IMAGEN-RECTA]
-![alt text](screenshots/image-recta.png)
+![alt text](screenshots/Recta1.png)
 
 Esto sin embargo tiene la contra de que en una curva pude alinearse momentanemente con la recta
 y pegar un acelerón que desestabilice la trayectoria. La función definida V se ha definido teniendo en
 cuenta la forma de la pista y los otros parámetros definidos a través de prueba y error.
 
-[INSERTAR IMAGEN-CURVA]
-![alt text](screenshots/image-curva.png)
+![alt text](screenshots/Curva1.png)
 
 Los parámetros definidos para la velocidad angular son:
 

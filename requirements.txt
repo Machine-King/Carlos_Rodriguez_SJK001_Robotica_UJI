@@ -1,3 +1,0 @@
-
-# Dependencias mínimas recomendadas para ejecutar Unibotics
-docker (Y las dependecias que te pido docker)

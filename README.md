@@ -3,9 +3,10 @@
 Este repositorio contiene el código, instrucciones de uso, explicación de funcionamiento y evaluación del rendimiento para el ejercicio 'Follow line' de Unibotics.
 
 ## Contenido
-- `code/` — Código fuente 
-- `docs/` — Documentación, explicaciones y capturas
-- `requirements.txt` — Dependencias recomendadas
+- `code/` — Código fuente de las tres versiones (P, PD, PID)
+- `docs/Discusión.md` — Discusión del código. **¡INTERESANTE!**
+- `docs/screenshots` — Imagenes usadas en Discusión.md
+- `images_installation` - Imagenes utilizadas en este README.md
 
 ## Instrucciones de uso
 Paso 1:
@@ -36,13 +37,13 @@ docker run --rm -it --device /dev/dri --gpus all \
 
 A continuación ir a la web de unibotics https://unibotics.org/, crearse una cuenta y acceder al ejecicio 'Follow line'
 
-![alt text](image.png)
+![alt text](images_installation/image.png)
 
 Pegar el código el la zona designada para ello y conectar con el backend dándole al botón.
-![alt text](image-1.png)
+![alt text](images_installation/image-1.png)
 
 Finalmente darle al boton play para ejecutar el código. Todo listo!
-![alt text](image-2.png)
+![alt text](images_installation/image-2.png)
 
 
 © Carlos Luis Rodriguez Brito

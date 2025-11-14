@@ -39,10 +39,10 @@ Next, go to the Unibotics website https://unibotics.org/, create an account, and
 
 ![alt text](images_installation/image.png)
 
-Paste the code in the designated area and connect to the backend by clicking the button.
+Paste the code in the designated area and connect to the backend by clicking the button. 
 ![alt text](images_installation/image-1.png)
 
-Finally, click the play button to run the code. All set!
+Finally, click the play button to run the code. All set! 
 ![alt text](images_installation/image-2.png)
 
 © Carlos Luis Rodriguez Brito

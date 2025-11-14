@@ -1,25 +1,25 @@
-# Proyecto: Robotica_UJI SJK001 (Carlos_Rodriguez)
+# Project: Robotics_UJI SJK001 (Carlos_Rodriguez)
 
-Este repositorio contiene el código, instrucciones de uso, explicación de funcionamiento y evaluación del rendimiento para el ejercicio 'Follow line' de Unibotics.
+This repository contains the code, usage instructions, explanation of how it works, and performance evaluation for the Unibotics exercise “Follow line”.
 
-## Contenido
-- `code/` — Código fuente de las tres versiones (P, PD, PID)
-- `docs/Discusión.md` — Discusión del código. **¡INTERESANTE!**
-- `docs/screenshots` — Imagenes usadas en Discusión.md
-- `images_installation` - Imagenes utilizadas en este README.md
+## Contents
+- `code/` --> Source code of the three controller versions (P, PD, PID)
+- `docs/discussion.md` --> Code discussion. **INTERESTING!**
+- `docs/screenshots` --> Images used in `discussion.md`
+- `images_installation` --> Images used in this `README.md`
 
-## Instrucciones de uso
-Paso 1:
-Descarga docker desde su página oficial: https://www.docker.com/
+## Usage instructions
+Step 1:  
+Download Docker from its official website: https://www.docker.com/
 
-Paso 2:
-Desde el terminal ejecuta el siguiente comando para descargar la imagen del backend:
+Step 2:  
+From the terminal, run the following command to download the backend image:
 
 ```bash
 docker pull jderobot/robotics-backend:latest
 ```
 
-Dependiendo del hardware de tu equipo ejecutar uno de los siguientes comandos para lanzar el contenedor:
+Depending on your hardware, run one of the following commands to start the container:
 
 ```bash
 #Without graphic acceleration
@@ -35,15 +35,14 @@ docker run --rm -it --device /dev/dri --gpus all \
   -p 6080-6090:6080-6090 -p 7163:7163 jderobot/robotics-backend:latestt
 ```
 
-A continuación ir a la web de unibotics https://unibotics.org/, crearse una cuenta y acceder al ejecicio 'Follow line'
+Next, go to the Unibotics website https://unibotics.org/, create an account, and access the “Follow line” exercise.
 
 ![alt text](images_installation/image.png)
 
-Pegar el código el la zona designada para ello y conectar con el backend dándole al botón.
+Paste the code in the designated area and connect to the backend by clicking the button.
 ![alt text](images_installation/image-1.png)
 
-Finalmente darle al boton play para ejecutar el código. Todo listo!
+Finally, click the play button to run the code. All set!
 ![alt text](images_installation/image-2.png)
-
 
 © Carlos Luis Rodriguez Brito

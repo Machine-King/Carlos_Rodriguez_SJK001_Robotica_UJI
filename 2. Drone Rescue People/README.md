@@ -1,6 +1,6 @@
 # Project: Robotics_UJI SJK001 (Carlos_Rodriguez)
 
-This repository contains the code, usage instructions, explanation of how it works, and performance evaluation for the Unibotics exercise “Follow line”.
+This repository contains the code, usage instructions, explanation of how it works, and performance evaluation for the Unibotics exercise “Drone Rescue People”.
 
 ## Contents
 - `code/` --> Source code of the three controller versions (P, PD, PID)

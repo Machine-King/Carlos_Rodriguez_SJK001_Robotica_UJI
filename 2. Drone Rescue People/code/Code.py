@@ -10,7 +10,7 @@ GoX, GoY, GoZ = 32.5, -35 , 4
 HAL.takeoff(GoZ)
 MiX, MiY, MiZ = HAL.get_position()
 Yaw = atan((GoY-MiY)/(GoX-MiX))
-D = sqrt((MiX-GoX)**2+(MiY-GoY))
+D = sqrt((MiX-GoX)**2+(MiY-GoY)**2)
 #SOLO AL INICIO
 HAL.set_cmd_pos(GoX, GoY, GoZ, Yaw)
 while D > 0.5:
@@ -25,7 +25,7 @@ face_detector = cv2.CascadeClassifier('/resources/exercises/rescue_people/haarca
 # Parámetros de la espiral
 a = 1      
 b = 2    
-theta_max = 8 * pi #r_max = 1+0.5*8=5.50m
+theta_max = 8 * pi
 particiones = 80
 thetas = linspace(0, theta_max, particiones)
 pos_survivor = []
@@ -68,13 +68,15 @@ for i, theta in enumerate(thetas):
            break
    if survivor_detected:
        print(f' Nuevo superviviente en: x={pos_survivor[-1][0]}, y={pos_survivor[-1][1]}')
-   print(f"Progreso espiral {i/particiones*100:.2f} %")
+   print(f"Progreso espiral {(i+1)/particiones*100:.2f} %")
 print('Fin espiral')
 print(f"Encontrado {len(pos_survivor)}")
 print(pos_survivor)
-HAL.set_cmd_pos(0, 0, 4, Yaw)
 
-#Código para volver
+
+#Código de vuelta
+HAL.set_cmd_pos(0, 0, 4, Yaw)
+D = sqrt((MiX-0)**2+(MiY-0)**2)
 while D > 0.05:
    MiX, MiY, MiZ = HAL.get_position()
    D = sqrt((MiX-0)**2+(MiY-0)**2)

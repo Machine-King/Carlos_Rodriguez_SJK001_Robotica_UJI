@@ -14,7 +14,7 @@ This document explains the drone search-and-rescue script. The script's objectiv
 1. Initialize target coordinates `GoX, GoY, GoZ` and command takeoff with `HAL.takeoff(GoZ)`.
 2. Compute orientation (`Yaw`) and distance (`D`) to the target and send `HAL.set_cmd_pos(GoX, GoY, GoZ, Yaw)`.
 3. Wait until the drone is near the target (threshold 0.05 m).
-4. Generate a spiral (parameters `a`, `b`, `theta_max`, `particiones`). Create a list of angles based on `particiones` and `theta_max` and iterate over it. Using mathematical formulas, compute the next position for the drone (always within the spiral), move the drone, capture the ventral image, rotate the image at several angles, and search for faces with a Haar classifier.
+4. Generate a spiral (parameters `a`, `b`, `theta_max`, `particiones`). Create a list of angles based on `particiones` and `theta_max` and iterate over it. Using mathematical formulas, compute the next position for the drone (always within the spiral), move the drone, capture the ventral image, rotate the image at several angles, and search for faces with the Haar Cascade classifier.
 5. If a face is detected and it is not near a previous detection, save the drone's current position as a possible survivor.
 
 ![alt text](screenshots/Detecta-cara.png)
